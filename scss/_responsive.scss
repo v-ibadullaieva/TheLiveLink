@@ -1,0 +1,246 @@
+@media all and (max-width: 595px) {
+	header {
+		.header-top {
+			img {
+				width: 35%;
+			}
+			.header-phone {
+				display: none;
+			}
+		}
+	}
+	.block-action {
+		.bx-wrapper {
+			display: none;
+		}
+	}
+	.block-offers {
+		display: none;
+	}
+	.block-companies {
+		padding-top: 0 !important;
+		.text-company {
+			margin-bottom: 15px;
+		}
+		button {
+			float: none !important;
+			clear: both;
+			margin-left: 15px;
+		}
+		.block-company-main {
+			.col-img-wrap {
+				width: 100%;	
+			}
+		}
+	}
+	.block-overviews {
+		.block-overview-header {
+			.text {
+				float: none !important;
+			}
+			button {
+				margin-top: 15px;
+				margin-left: 15px;
+				float: none !important;
+			}
+		}
+	}
+	footer {
+		.header-menu {
+			display: none;
+		}
+		.footer-main {
+			.block-btn {
+				display: none;
+			}
+			.payment {
+				display: none;
+			}
+			.block-socials {
+				// text-align: left !important;
+				.block-social {
+					display: block !important;
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 990px) {
+	header {
+		background-image: none !important;
+		img {
+			width: 16%;
+			margin-right: 50px !important;
+		}
+		.header-top {
+			.header-phone {
+				padding-top: 0;
+				.phone {
+					@include font(18px, 500, #333);
+					.bold {
+						font-size: 18px;
+						font-weight: 500;
+					}
+				}
+				.search {
+					width: 220px;
+				}
+			}
+			.header-help {
+				display: none;
+			}
+			.header-enter {
+				.clients {
+					span {
+						display: none;
+					}
+				}
+			}
+			.header-basket {
+				.cart {
+					@include media-sprite(header_cart_respon);
+					.circle {
+						@include media-sprite(header_count_600);
+						margin-left: 8px;	
+						.quantity {
+							font-size: 10px;
+							margin-left: 2px;
+							display: block;
+						}
+					}
+				}
+				.text {
+					font-size: 13px;
+					line-height: 20px;
+				}
+				.icon-arrow {
+					@include media-sprite(header_arrow_user_600);
+					margin: 7px 0 0 10px;
+				}
+			}
+		}
+		.header-menu {
+			display: none;
+		}
+	}
+	.block-main-menu {
+		.navbar {
+			display: block !important;
+			.navbar-header {
+				float: inherit;
+				.navbar-toggle {
+					display: block !important;
+				}
+			}
+		}
+		.menu {
+			display: none;
+		}
+	}
+	.block-action {
+		padding-top: 15px !important;
+		padding-bottom: 35px;
+	}
+	.block-offers {
+		.btn-offers {
+			margin-right: 25px !important;
+		}
+		.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+			padding-right: 10px !important;
+		}
+		ul {
+			li {
+				&.phone {
+					display: none !important;
+				}
+				.navbar {
+					// background-color: transparent;
+					.navbar-header {
+						// float: inherit;
+						.navbar-toggle {
+							display: inline-block !important;
+						// 	margin: 0;
+						// 	padding: 8px 5px;
+						// 	background-color: #fff;
+						// 	margin-left: 15px;
+						}
+					}
+				}
+				// .navbar-default {
+				// 	border: none;
+				// 	margin-bottom: 0;
+				// }
+			}
+		}
+	}
+ 	.block-overviews {
+		.block-article {
+			@include clearfix;
+			margin-top: 10px;
+			.img-wrap {
+				float: left;
+				width: 125px;
+			}
+			.text-wrap {
+				// float: left;
+				// width: 83%;
+				padding-left: 170px;
+			}
+		}
+	}
+	footer {
+		padding-bottom: 0 !important;
+		.footer-main {
+			.contacts {
+				float: left;
+				.phone {
+					margin-bottom: 25px !important;
+				}
+			}
+			.block-btn {
+				float: right;
+				margin-right: 58px;
+				button {
+					margin-bottom: 17px !important;
+				}
+				.conditions {
+					margin-left: -10px !important;
+				}
+			}
+			.payment {
+				margin-right: 25px;
+				img {
+					display: block;
+					margin-top: 10px;
+				}
+			}
+			.block-socials {
+				border-bottom: 1px solid #e6e6e6;
+				padding-bottom: 25px;
+				padding-top: 25px;
+				text-align: center;
+				.block-social {
+					display: inline-block;
+					margin-right: 28px;
+				}
+			}
+			.company {
+				border-left: none !important;
+				margin-top: 30px;
+				text-align: center;
+				img {
+					display: inline-block;
+					margin-top: 5px;
+				}
+				.text {
+					display: inline-block;
+					text-align: left;
+					margin-left: 10px;
+					vertical-align: top;
+				}
+			}
+		} 
+	}
+}
+

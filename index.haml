@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+    %title TheLiveLinkShop
+    %link{rel: "stylesheet", href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :href => "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"}
+    %link{:rel => "stylesheet", :href => "css/jquery.bxslider.css"}/
+    %link{:href => "css/style.css", :rel => "stylesheet"}
+    %script{:src => "js/jquery-1.11.3.min.js"}
+    %script{:src => "https://code.jquery.com/ui/1.11.4/jquery-ui.js"}
+    %script{:src => "js/jquery.bxslider.min.js"}
+    %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"}
+  %body
+    .wrapper
+      %header
+        .content
+          .header-top.clearfix
+            %img{:src => "img/main_logo.png", :alt => "logo"}
+            .header-phone
+              .phone
+                (044) 
+                %span.bold 555-00-00
+                %a.call{:href => "#"} Обратный звонок
+              .search
+                %input{:type => "text", :placeholder => "Поиск"}
+                %a.search-btn 
+            .pull-right
+              %a.header-help{:href => "#"}
+                %span.online
+                %span.icon-online
+                .text 
+                  Помощь
+                  %br
+                  онлайн
+              .pull-right
+                .header-enter
+                  %span.icon-enter
+                  %a.clients{:href => "#"} 
+                    Вход 
+                    %span для постоянных клиентов
+                %a.header-basket 
+                  %span.cart
+                    %span.circle
+                      %span.quantity 3
+                  .text Корзина
+                  %span.icon-arrow
+          .header-menu
+            %ul.clearfix
+              %li
+                %a{:href => "#"} О магазине
+              %li
+                %a{:href => "#"} Адреса и телефоны
+              %li
+                %a{:href => "#"} Акции
+              %li
+                %a{:href => "#"} Новости
+              %li
+                %a{:href => "#"} Статьи и обзоры
+              %li
+                %a{:href => "#"} 
+                  %span.question
+                  Помощь
+              %li
+                %a{:href => "#"} Доставка и оплата
+              %li
+                %a{:href => "#"} Гарантия и сервис
+      .block-main-menu
+        .content
+          .navbar.navbar-default
+            .navbar-header
+              %button.navbar-toggle.collapsed{:type => "button", :'data-toggle' => "collapse", :'data-target' => "#bs-example-navbar-collapse-1", :'aria-expanded' => "false"}
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %select#speed{:name => "speed"}
+                %option{:value => "", :selected => "selected"} ПК и Серверы Prime PC
+                %option{:value => ""} Компьютеры и периферия
+                %option{:value => ""} Программное обеспечение
+                %option{:value => ""} Сети и телекоммуникации
+                %option{:value => ""} Системы безопастности
+                %option{:value => ""} Бесперебойная работа
+          %ul.menu.clearfix
+            %li
+              %a{:href => "#"} 
+                ПК и Серверы
+                %br
+                Prime PC
+            %li
+              %a{:href => "#"}
+                Компьютеры
+                %br
+                и периферия
+              .sub-menu
+                .row
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a.header{:href => "#"} Компьютеры
+                      %li
+                        %a{:href => "#"} Компьютеры
+                      %li
+                        %a{:href => "#"} Сервера
+                      %li
+                        %a{:href => "#"} Тонкие клиенты
+                      %li
+                        %a{:href => "#"} Неттопы и моноблоки
+                      %li
+                        %a{:href => "#"} ИБП
+                      %li
+                        %a{:href => "#"} Мониторы
+                      %li
+                        %a{:href => "#"} Манипуляторы
+                      %li
+                        %a{:href => "#"} Аксессуары
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a.header{:href => "#"} 
+                          Ноутбуки
+                          %br
+                          и планшеты
+                      %li
+                        %a{:href => "#"} Планшеты
+                      %li
+                        %a{:href => "#"} Ноутбуки
+                      %li
+                        %a{:href => "#"} Сумки для ноутбуков
+                      %li
+                        %a{:href => "#"} Аксессуары для ноубуков
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a.header{:href => "#"} Оргтехника
+                      %li
+                        %a{:href => "#"} Принтеры
+                      %li
+                        %a{:href => "#"} МФУ
+                      %li
+                        %a{:href => "#"} Плоттеры
+                      %li
+                        %a{:href => "#"} ИБП
+                      %li
+                        %a{:href => "#"} Сканеры
+                      %li
+                        %a{:href => "#"} Манипуляторы
+                      %li
+                        %a{:href => "#"} Телефоны
+                      %li
+                        %a{:href => "#"} Факсы
+                      %li
+                        %a{:href => "#"} Расходные материалы
+                      %li
+                        %a{:href => "#"} Аксессуары
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a.header{:href => "#"} 
+                          Мониторы
+                          %br
+                          и ЖК-панели
+                      %li
+                        %a{:href => "#"} Мониторы
+                      %li
+                        %a{:href => "#"} Сетевые мониторы
+                      %li
+                        %a{:href => "#"} Профессиональные
+                      %li
+                        %a{:href => "#"} ЖК панели
+            %li
+              %a{:href => "#"}
+                Программное
+                %br
+                обеспечение
+            %li
+              %a{:href => "#"}
+                Сети и теле-
+                %br
+                коммуникации
+            %li
+              %a{:href => "#"}
+                Системы
+                %br
+                безопастности
+            %li
+              %a{:href => "#"}
+                Бесперебойная
+                %br
+                работа
+      .block-action
+        .content
+          .row
+            .col-sm-12.col-md-8
+              %ul.bxslider
+                %li
+                  %img{:src => "img/block_action_goods2.jpg", :alt => "action"}
+                  .main-promo
+                    %h1 
+                      Инновационные решения
+                      %br
+                      Cisco Catalyst Switches
+                    .promo.hide-ph
+                      Постройте свою безграничную сеть 
+                      %br
+                      с уникальным предложением 
+                      %br
+                      безопасных и надежных решений
+                    %button Ознакомиться с решением
+                %li
+                  %img{:src => "img/block_action_goods2.jpg", :alt => "action"}
+                  .main-promo
+                    %h1 
+                      Инновационные решения
+                      %br
+                      Cisco Catalyst Switches
+                    .promo.hide-ph
+                      Постройте свою безграничную сеть 
+                      %br
+                      с уникальным предложением 
+                      %br
+                      безопасных и надежных решений
+                    %button Ознакомиться с решением
+                %li
+                  %img{:src => "img/block_action_goods2.jpg", :alt => "action"}
+                  .main-promo
+                    %h1 
+                      Инновационные решения
+                      %br
+                      Cisco Catalyst Switches
+                    .promo.hide-ph
+                      Постройте свою безграничную сеть 
+                      %br
+                      с уникальным предложением 
+                      %br
+                      безопасных и надежных решений
+                    %button Ознакомиться с решением
+                %li
+                  %img{:src => "img/block_action_goods2.jpg", :alt => "action"}
+                  .main-promo
+                    %h1 
+                      Инновационные решения
+                      %br
+                      Cisco Catalyst Switches
+                    .promo.hide-ph
+                      Постройте свою безграничную сеть 
+                      %br
+                      с уникальным предложением 
+                      %br
+                      безопасных и надежных решений
+                    %button Ознакомиться с решением
+            .col-sm-12.col-md-4.actions
+              %h2 Акции
+              .action
+                .img-promo
+                  %img{:src => "img/icon_kasper.png", :alt => "product"}
+                .text-promo
+                  %a{:href => "#"} Коробочные продукты «Лаборатории Касперского» 
+                  %span.regular без увеличения стоимости!
+              .action
+                .img-promo
+                  %img{:src => "img/icon_abbyy.png", :alt => "product"}
+                .text-promo
+                  %a{:href => "#"} Специальные цены на ABBYY FineReader 
+                  %span.regular 10 Professional Edition!
+              .action
+                .img-promo
+                  %img{:src => "img/icon_windows.png", :alt => "product"}
+                .text-promo
+                  %a{:href => "#"} Скидка до 80% на программные продукты
+                  %span.regular Microsoft для академических пользователей и научных учреждений
+              %button 
+                Все акции
+                %span.action-arrow
+      .block-offers
+        .content
+          #tabs
+            %ul
+              %li
+                .navbar.navbar-default
+                  .navbar-header
+                    %a{:href => "#tabs-1"} 
+                      Спецпредложения
+                      %button.navbar-toggle.collapsed{:type => "button", :'data-toggle' => "collapse", :'data-target' => "#bs-example-navbar-collapse-1", :'aria-expanded' => "false"}
+                        %span.icon-bar
+                        %span.icon-bar
+                        %span.icon-bar
+              %li.phone
+                %a{:href => "#tabs-2"} Бестселлеры
+              %li.phone
+                %a{:href => "#tabs-3"} Новинки
+              %li.phone
+                %a{:href => "#tabs-4"} Скоро в продаже
+            #tabs-1
+              %button.btn-offers 
+                Все спецпредложения
+                %span.action-arrow
+              .slider
+                .slide
+                  .slide-wrap
+                    .img-wrap
+                      %span.action-word Подарок
+                      %img.img-product{:src => "img/product1_action.jpg", :alt => "product"}
+                    .spetial-offer + в подарок мышка и стильная сумка
+                    %a{:href => "#"} Asus ee PC 1015PE White
+                    %button.main-price 
+                      6 257 грн.
+                      %span.cart
+                    .value 756 $
+                .slide
+                  .slide-wrap
+                    .img-wrap
+                      %span.action-word Суперцена
+                      %img.img-product{:src => "img/product2.jpg", :alt => "product"}
+                    .spetial-offer Уникальное снижение цены на винчестер 200 GB!
+                    %a{:href => "#"} Samsung HD203WI
+                    .old-price
+                      754 грн.
+                    %button.main-price 
+                      599 грн.
+                      %span.cart
+                    .value 86 $
+                .slide
+                  .slide-wrap
+                    .img-wrap
+                      %span.action-word Скидка!
+                      %img.img-product{:src => "img/product3.jpg", :alt => "product"}
+                    .spetial-offer При покупке 5 камер и более — скидка 10%
+                    %a{:href => "#"} Vision Hi-Tech VB60CSHR
+                    .old-price 1 754 грн.
+                    %button.main-price 
+                      1 599 грн.
+                      %span.cart
+                    .value 206 $
+                .slide
+                  .slide-wrap
+                    .img-wrap
+                      %span.action-word Суперцена
+                      %img.img-product{:src => "img/product4.jpg", :alt => "product"}
+                    .spetial-offer По европейской цене!
+                    %a{:href => "#"} Apple iMac 27" (Z0GF)
+                    .old-price 24 754 грн.
+                    %button.main-price 
+                      23 399 грн.
+                      %span.cart
+                    .value 3 049 $
+                .slide
+                  .slide-wrap
+                    .img-wrap
+                      %span.action-word Скидка!
+                      %img.img-product{:src => "img/product5.jpg", :alt => "product"}
+                    .spetial-offer Скидка 25%
+                    %a{:href => "#"} Видеокарта MSI N9800GT
+                    .old-price 1 754 грн.
+                    %button.main-price 
+                      1 434 грн.
+                      %span.cart
+                    .value 246 $
+            #tabs-2
+              2
+            #tabs-3
+              3
+            #tabs-4
+              4        
+      .block-companies
+        .content
+          .block-company-header.clearfix
+            %span.text-company 
+              IT-решения и компьютерная техника 
+              %br.visible-xs
+              ведущих мировых производителей
+            %button 
+              Все производители
+              %span.action-arrow
+          .block-company-main
+            .row
+              .col-md-3.col-xs-6
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_att.jpg", :alt => "block_company_att"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_toshiba.jpg", :alt => "block_company_toshiba"}
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_apple.jpg", :alt => "block_company_apple"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_microsoft.jpg", :alt => "block_company_microsoft"}
+              .col-md-3.col-xs-6
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_cisco.jpg", :alt => "block_company_cisco"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_panasonic.jpg", :alt => "block_company_panasonic"}
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_nokia.jpg", :alt => "block_company_nokia"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_sumsung.jpg", :alt => "block_company_sumsung"}
+              .col-md-3.col-xs-6
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_ibm.jpg", :alt => "block_company_ibm"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_dell.jpg", :alt => "block_company_dell"}
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_intel.jpg", :alt => "block_company_intel"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_amd.jpg", :alt => "block_company_amd"}
+              .col-md-3.col-xs-6
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_lenovo.jpg", :alt => "block_company_lenovo"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_asus.jpg", :alt => "block_company_asus"}
+                .row
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_nec.jpg", :alt => "block_company_nec"}
+                  .col-xs-6.col-img-wrap
+                    .block-img
+                      %img{:src => "img/block_company_kasper.jpg", :alt => "block_company_kasper"}
+
+          / .block-company-row.top.clearfix
+          /   .block-img
+          /     %img{:src => "img/block_company_att.jpg", :alt => "block_company_att"}
+          /   .block-img
+          /     %img{:src => "img/block_company_toshiba.jpg", :alt => "block_company_toshiba"}
+          /   .block-img
+          /     %img{:src => "img/block_company_apple.jpg", :alt => "block_company_apple"}
+          /   .block-img
+          /     %img{:src => "img/block_company_microsoft.jpg", :alt => "block_company_microsoft"}
+          /   .block-img
+          /     %img{:src => "img/block_company_cisco.jpg", :alt => "block_company_cisco"}
+          /   .block-img
+          /     %img{:src => "img/block_company_panasonic.jpg", :alt => "block_company_panasonic"}
+          /   .block-img
+          /     %img{:src => "img/block_company_nokia.jpg", :alt => "block_company_nokia"}
+          /   .block-img
+          /     %img{:src => "img/block_company_sumsungblock_company_sumsung.jpg", :alt => "block_company_sumsung"}
+          / .block-company-row.bottom.clearfix
+          /   .block-img
+          /     %img{:src => "img/block_company_ibm.jpg", :alt => "block_company_ibm"}
+          /   .block-img
+          /     %img{:src => "img/block_company_dell.jpg", :alt => "block_company_dell"}
+          /   .block-img
+          /     %img{:src => "img/block_company_intel.jpg", :alt => "block_company_intel"}
+          /   .block-img
+          /     %img{:src => "img/block_company_amdblock_company_amd.jpg", :alt => "block_company_amd"}
+          /   .block-img
+          /     %img{:src => "img/block_company_lenovo.jpg", :alt => "block_company_lenovo"}
+          /   .block-img
+          /     %img{:src => "img/block_company_asusblock_company_asus.jpg", :alt => "block_company_asus"}
+          /   .block-img
+          /     %img{:src => "img/block_company_nec.jpg", :alt => "block_company_nec"}
+          /   .block-img
+          /     %img{:src => "img/block_company_kasper.jpg", :alt => "block_company_kasper"}
+          .block-company-list.clearfix
+            .row
+              .col-sm-6.col-xs-12
+                .row
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} ACER
+                      %li
+                        %a{:href => "#"} ADOBE
+                      %li
+                        %a{:href => "#"} AMP NETCONNECT
+                      %li
+                        %a{:href => "#"} АРС
+                      %li
+                        %a{:href => "#"} Apollo
+                      %li
+                        %a{:href => "#"} ASSMANN
+                      %li
+                        %a{:href => "#"} AVAYA
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} BenQ
+                      %li
+                        %a{:href => "#"} BOSCH
+                      %li
+                        %a{:href => "#"} CISCO
+                      %li
+                        %a{:href => "#"} Dell
+                      %li
+                        %a{:href => "#"} D-LINK
+                      %li
+                        %a{:href => "#"} Dr.Web
+                      %li
+                        %a{:href => "#"} EPSON
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} McAfee
+                      %li
+                        %a{:href => "#"} MICROSOFT
+                      %li
+                        %a{:href => "#"} MSI
+                      %li
+                        %a{:href => "#"} NEC
+                      %li
+                        %a{:href => "#"} OKI
+                      %li
+                        %a{:href => "#"} PANASONIC
+                      %li
+                        %a{:href => "#"} ORACLE
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} BenQ
+                      %li
+                        %a{:href => "#"} BOSCH
+                      %li
+                        %a{:href => "#"} CISCO
+                      %li
+                        %a{:href => "#"} Dell
+                      %li
+                        %a{:href => "#"} D-LINK
+                      %li
+                        %a{:href => "#"} Dr.Web
+                      %li
+                        %a{:href => "#"} EPSON
+              .col-sm-6.col-xs-12
+                .row
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} PANASONIC
+                      %li
+                        %a{:href => "#"} PROMT
+                      %li
+                        %a{:href => "#"} R&M
+                      %li
+                        %a{:href => "#"} SAMSUNG
+                      %li
+                        %a{:href => "#"} TOSHIBA
+                      %li
+                        %a{:href => "#"} VINET
+                      %li
+                        %a{:href => "#"} VMware
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} ESET
+                      %li
+                        %a{:href => "#"} HP
+                      %li
+                        %a{:href => "#"} HITACHI DATA SYSTEMS
+                      %li
+                        %a{:href => "#"} IBM
+                      %li
+                        %a{:href => "#"} INTEL
+                      %li
+                        %a{:href => "#"} KINGSTON
+                      %li
+                        %a{:href => "#"} LG ELECTRONICS
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} McAfee
+                      %li
+                        %a{:href => "#"} MICROSOFT
+                      %li
+                        %a{:href => "#"} MSI
+                      %li
+                        %a{:href => "#"} NEC
+                      %li
+                        %a{:href => "#"} OKI
+                      %li
+                        %a{:href => "#"} ORACLE
+                      %li
+                        %a{:href => "#"} PANASONIC
+                  .col-xs-3
+                    %ul
+                      %li
+                        %a{:href => "#"} PANASONIC
+                      %li
+                        %a{:href => "#"} PROMT
+                      %li
+                        %a{:href => "#"} R&M
+                      %li
+                        %a{:href => "#"} SAMSUNG
+                      %li
+                        %a{:href => "#"} TOSHIBA
+                      %li
+                        %a{:href => "#"} VINET
+                      %li
+                        %a{:href => "#"} VMware
+      .block-overviews
+        .content
+          .block-overview-header 
+            %span.text Статьи и обзоры
+            %button.overview-button-top 
+              Другие статьи и обзоры
+              %span.action-arrow 
+          .row
+            .col-xs-12.col-sm-12.col-md-3
+              .block-article.first
+                .img-wrap
+                  %img{:src => "img/block_article_1.jpg", :alt => "block_article_1"}
+                .text-wrap
+                  %a{:href => "#"} Обзор смартфона Samsung Galaxy R
+                  .article-promo Samsung продолжает наращивать количество   моделей в свой звездной серии смартфонов Galaxy. Впрочем, на этот раз причина появления новинки вполне предсказуема.
+            .col-xs-12.col-sm-12.col-md-3
+              .block-article.second
+                .img-wrap
+                  %img{:src => "img/block_article_2.jpg", :alt => "block_article_2"}
+                .text-wrap
+                  %a{:href => "#"} Обзор принтера Hewlett Packard Deskjet D1663
+                  .article-promo Волны удовольствия...! Ну какой украинец не любит вкусной еды? Вот и я, признаться, не прочь поесть что-нибудь аппетитное.
+            .col-xs-12.col-sm-12.col-md-3
+              .block-article.third.hide-ph
+                .img-wrap
+                  %img{:src => "img/block_article_3.jpg", :alt => "block_article_3"}
+                .text-wrap
+                  %a{:href => "#"} LIFEBOOK X2: ноутбук, складывающийся вчетверо
+                  .article-promo Настольный компьютер, ноутбук, нетбук, планшет, смартфон – вроде бы все размерные ниши компьютерных устройств уже заняты, и ничего нового тут не придумаешь.
+            .col-xs-12.col-sm-12.col-md-3
+              .block-article.fourth.hide-ph
+                .img-wrap
+                  %img{:src => "img/block_article_4.jpg", :alt => "block_article_4"}
+                .text-wrap
+                  %a{:href => "#"} Обзор беспроводного HDD Seagate GoFlex Satellite
+                  .article-promo Банальный вопрос: что делать, если в вашем ноутбуке закончилось место на жестком диске? Самый простой ответ – купить внешний жесткий диск с USB-интерфейсом, благо сейчас это недорого и широко доступно.
+          .block-overview-header.hide-sm 
+            %button.overview-button-bottom.hidden 
+              Другие статьи и обзоры
+              %span.action-arrow  
+        .block-footer
+      %footer
+        .content 
+          .copyright &copy 2003–2013, The LiveLinkShop 
+          .header-menu
+            %ul.clearfix
+              %li
+                %a{:href => "#"} О магазине
+              %li
+                %a{:href => "#"} Адреса и телефоны
+              %li
+                %a{:href => "#"} Акции
+              %li
+                %a{:href => "#"} Новости
+              %li
+                %a{:href => "#"} Статьи и обзоры
+              %br.visible-xs-block
+              %li
+                %a{:href => "#"} 
+                  %span.question
+                  Помощь
+              %li
+                %a{:href => "#"} Доставка и оплата
+              %li
+                %a{:href => "#"} Гарантия и сервис
+          .footer-main
+            .row
+              .col-xs-12.col-sm-12.col-md-3
+                .contacts
+                  .adress Украина, Киев, ул. Ленина, 31
+                  .phone 
+                    (044) 
+                    %span.bold 555-00-00
+                    %div
+                      %a.call{:href => "#"} Обратный звонок
+                .block-btn
+                  %button 
+                    %span.underline Форма обратной связи
+                  %a.conditions{:href => "#"} Условия использования сайта
+              .col-xs-12.col-sm-12.col-md-3
+                .time.pull-left
+                  .black Время работы с 9:00 до 19:00
+                  Суббота с 9:00 до 18:00
+                  %br
+                  Воскресенье  с 10:00 до 15:00
+                .payment.pull-right
+                  Принимаем к оплате
+                  %img{:src => "img/footer_payment.jpg", :alt => "footer_payment"}
+              .col-xs-12.col-sm-12.col-md-3
+                .block-socials
+                  .block-social 
+                    %span.icon-fb
+                    %a{:href => "#"} Мы на Фейсбуке
+                  .block-social 
+                    %span.icon-vk 
+                    %a{:href => "#"} Наша страница вКонтакте
+                  .block-social
+                    %span.icon-tw
+                    %a{:href => "#"} Наш Твитер
+              .col-xs-12.col-sm-12.col-md-3
+                .company
+                  %img{:src => "img/footer_company.jpg", :alt => "footer_company"}
+                  .text
+                    Интернет-магазин разработан 
+                    %br
+                    и поддерживается 
+                    %a{:href => "#"} в компании OWOX
+                    .text-muted
+                      2011
+  
+
+
+                
+
+
+       
+    %script{src: "js/main.js", type: "text/javascript"}
+
+          

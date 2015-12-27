@@ -1,0 +1,175 @@
+@import "get_sprite";
+@include all-images-sprites(true);
+
+@mixin media-sprite($sprite) {
+	@include get-sprite($images-sprites, $sprite);
+}
+
+@mixin font($size, $weight, $color: #000) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+@mixin link {
+	display: block;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+@mixin btn-main {
+	@include font(18px, 600, #fff);
+	@include img(block_action_btn);
+	font-family: "Century Gothic", sans-serif;
+	line-height: 45px;
+	padding: 0 28px 0 14px;
+	text-align: center;
+	display: block;
+	border:  none;
+	letter-spacing: -1px;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		border-style: none;
+		opacity: .9;
+	}
+	&:hover {
+		opacity: .9;
+	}
+}
+
+@mixin btn-all {
+	@include font(15px, 700, $color-blue);
+	@include background-image(linear-gradient(to bottom, #fff, #fff 20%, #eceded 70%, #fff));
+	@include link;
+	font-family: "Century Gothic", sans-serif;
+	line-height: 27px;
+	padding: 0 1px 0 3px;
+	text-align: center;
+	position: relative;
+	border: none;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	text-decoration: underline;
+	&:before {
+		@include img(btn_all_actions_left);
+		@include empty-pseudo;
+		display: block;
+		position: absolute;
+		left: -15px;
+		top: 1px;
+		bottom: 0;
+	}
+	&:after {
+		@include img(btn_all_actions_right);
+		@include empty-pseudo;
+		display: block;
+		position: absolute;
+		top: -1px;
+		right: -15px;
+		bottom: 0;
+	}
+	&:active {
+		opacity: .9;
+	}
+	&:hover {
+		opacity: .9;
+	}
+}
+
+@mixin img($image) {
+	@include images-sprite($image);
+	width: images-sprite-width($image);
+ 	height: images-sprite-height($image);
+}
+
+@mixin input-icon($icon) {
+	@include background(#fff url(../img/footer_form_#{$icon}.png) no-repeat 10px 7px);
+}
+
+
+@mixin btn($btn-img1: button_bg1, $btn-img2: button_bg1_hover) {
+	@include font(15px, 500, #fff);
+	@include img($btn-img1);
+	font-family: "Days_1";
+	text-transform: uppercase;
+	border: none;
+	border-radius: 8px;
+	text-align: center;
+	display: block;
+	box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		@include img($btn-img2);
+		border-style: none;
+		opacity: .9;
+	}
+}
+
+@mixin h2 {
+	@include font(30px, 500, #22adc8);
+	font-family: "Days_1";
+	text-align: center;
+}
+
+@mixin h22 {
+	@include h2;
+	color: #fff;
+	text-shadow: 3px 3px 1px rgba(92, 106, 195, 0.8);
+}
+
+@mixin h23 {
+	@include font(26px, 500, $color-red);
+	font-family: "Days_1";
+	text-transform: uppercase;
+}
+
+@mixin h3 {
+	@include font(16px, 600, $color-navy-blue);
+	font-family: "Days_1";
+	text-align: center;
+}
+
+@mixin h4 {
+	@include font(14px, 500, $color-navy-blue);
+	font-family: "Ubuntu-B_0";
+}
+
+@mixin text {
+	@include font(14px, 500, $color-violet);
+	font-family: "Ubuntu-M_2";
+}
+
+@mixin empty-pseudo {
+	content: ".";
+	font-size: 0;
+	color: transparent;
+}
+
+@mixin input {
+	@include font(14px, 500, $color-grey-input);
+	@include box-sizing(border-box);
+	font-family: "Ubuntu-R_2";
+	display: block;
+	margin: 0 auto 15px;
+	padding: 0 10px 0 35px;
+	border: 1px solid #c8e3f3;
+	border-radius: 8px;
+	// line-height: 35px;
+	height: 37px;
+	width: 290px;
+	&:focus {
+		outline: none;
+	}
+}
+
+
+
